@@ -1,0 +1,15 @@
+{
+	"name": "ecom-ingestion",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "55dbf062-d3f3-4b4c-b597-640b05d842c6",
+		"tenantId": "ba6190b6-889c-433d-88f3-7563f488752f"
+	}
+}

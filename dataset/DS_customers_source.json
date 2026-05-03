@@ -1,0 +1,23 @@
+{
+	"name": "DS_customers_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_GitHub_HTTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Bhevendra/ML-Datasets/refs/heads/main/retail_data/customers.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
