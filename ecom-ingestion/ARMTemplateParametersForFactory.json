@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ecom-ingestion"
+		},
+		"LS_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://ecomdevstorage1.dfs.core.windows.net/"
+		},
+		"LS_GitHub_HTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		}
+	}
+}
