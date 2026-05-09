@@ -1,0 +1,30 @@
+{
+	"name": "DS_metadata_driven_pipeline",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "adf_pipeline_files.json",
+				"folderPath": "metadata_files",
+				"fileSystem": "retail-data"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"file_name": {
+					"type": "string"
+				},
+				"folder_name": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
