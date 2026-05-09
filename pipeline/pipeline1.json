@@ -1,0 +1,16 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"parameters": {
+			"file_path": {
+				"type": "string",
+				"defaultValue": "customers_csv"
+			},
+			"folder": {
+				"type": "string",
+				"defaultValue": "customers"
+			}
+		},
+		"annotations": []
+	}
+}
