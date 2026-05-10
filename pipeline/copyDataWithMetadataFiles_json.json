@@ -1,9 +1,9 @@
 {
-	"name": "copyDataWithMetadataFiles",
+	"name": "copyDataWithMetadataFiles_json",
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "Lookup_via_jsonFIle",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -38,7 +38,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "Lookup_via_jsonFIle",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -47,7 +47,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookup1').output.value",
+						"value": "@activity('Lookup_via_jsonFIle').output.value",
 						"type": "Expression"
 					},
 					"activities": [
