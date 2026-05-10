@@ -1,0 +1,25 @@
+{
+	"name": "DS_MetaTable_driven_pipeline",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "file_name",
+				"type": "varchar"
+			},
+			{
+				"name": "folder_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "meta",
+			"table": "ecom_analytics"
+		}
+	}
+}
