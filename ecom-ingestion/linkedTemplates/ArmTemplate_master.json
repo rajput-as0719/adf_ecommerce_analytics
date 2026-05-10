@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_ADLS'"
 		},
+		"LS_SqlServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SqlServer1'"
+		},
 		"LS_ADLS_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://ecomdevstorage1.dfs.core.windows.net/"
@@ -18,6 +22,18 @@
 		"LS_GitHub_HTTP_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://raw.githubusercontent.com/"
+		},
+		"LS_SqlServer1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "ecommerce-analytics.database.windows.net"
+		},
+		"LS_SqlServer1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "ecom_database"
+		},
+		"LS_SqlServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "ashish_singh"
 		},
 		"containerUri": {
 			"type": "string",
@@ -49,11 +65,23 @@
 					"LS_ADLS_accountKey": {
 						"value": "[parameters('LS_ADLS_accountKey')]"
 					},
+					"LS_SqlServer1_password": {
+						"value": "[parameters('LS_SqlServer1_password')]"
+					},
 					"LS_ADLS_properties_typeProperties_url": {
 						"value": "[parameters('LS_ADLS_properties_typeProperties_url')]"
 					},
 					"LS_GitHub_HTTP_properties_typeProperties_url": {
 						"value": "[parameters('LS_GitHub_HTTP_properties_typeProperties_url')]"
+					},
+					"LS_SqlServer1_properties_typeProperties_server": {
+						"value": "[parameters('LS_SqlServer1_properties_typeProperties_server')]"
+					},
+					"LS_SqlServer1_properties_typeProperties_database": {
+						"value": "[parameters('LS_SqlServer1_properties_typeProperties_database')]"
+					},
+					"LS_SqlServer1_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SqlServer1_properties_typeProperties_userName')]"
 					}
 				}
 			},
