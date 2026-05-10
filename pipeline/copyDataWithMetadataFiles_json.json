@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup_via_jsonFIle",
+				"name": "Lookup_via_jsonFile",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -38,7 +38,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookup_via_jsonFIle",
+						"activity": "Lookup_via_jsonFile",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -47,7 +47,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookup_via_jsonFIle').output.value",
+						"value": "@activity('Lookup_via_jsonFile').output.value",
 						"type": "Expression"
 					},
 					"activities": [
