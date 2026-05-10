@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "copyDataWithMetadataFiles",
+					"referenceName": "copyDataWithMetadataFiles_json",
 					"type": "PipelineReference"
 				}
 			}
